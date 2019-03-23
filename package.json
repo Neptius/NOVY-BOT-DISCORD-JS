@@ -1,0 +1,21 @@
+{
+  "name": "novy_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
+    "start": "tsc && node dist/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "ffmpeg-binaries": "^4.0.0",
+    "opusscript": "^0.0.6"
+  }
+}
